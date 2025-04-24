@@ -1,0 +1,7 @@
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\bin\Debug\Day3.exe.config
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\bin\Debug\Day3.exe
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\bin\Debug\Day3.pdb
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\obj\Debug\Day3.csproj.AssemblyReference.cache
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\obj\Debug\Day3.csproj.CoreCompileInputs.cache
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\obj\Debug\Day3.exe
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day3\obj\Debug\Day3.pdb
