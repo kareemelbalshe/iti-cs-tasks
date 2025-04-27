@@ -4,9 +4,9 @@
     {
         private double interestRate;
 
-        public SavingsAccount(double initialBalance, double rate) : base(initialBalance)
+        public SavingsAccount(double initialBalance, double interestRate) : base(initialBalance)
         {
-            interestRate = rate;
+            this.interestRate = interestRate;
         }
 
         public double CalculateInterest()

@@ -6,18 +6,16 @@ namespace Day6
     {
         static void Main(string[] args)
         {
-            SavingsAccount savings = new SavingsAccount(1000.0, 0.05);
-            CheckingAccount checking = new CheckingAccount(500.0, 2.0);
+            SavingsAccount saving = new SavingsAccount(1000, 0.05);
+            Console.WriteLine("Saving balance: " + saving.GetBalance()); // 1000
+            Console.WriteLine("Saving interest: " + saving.CalculateInterest()); // 50
 
-            Console.WriteLine("Savings Account Balance: " + savings.GetBalance());
-            Console.WriteLine("Interest earned: " + savings.CalculateInterest());
+            CheckingAccount checking = new CheckingAccount(500, 10); // رصيد 500 ورسوم 10 لكل عملية
+            checking.Credit(100);
+            Console.WriteLine("Checking balance after credit: " + checking.GetBalance()); // 590 (500 + 100 - 10)
 
-            Console.WriteLine("\nChecking Account Balance: " + checking.GetBalance());
-            checking.Credit(100.0);
-            Console.WriteLine("After crediting 100 with fee, balance: " + checking.GetBalance());
-            checking.Debit(50.0);
-            Console.WriteLine("After debiting 50 with fee, balance: " + checking.GetBalance());
-            checking.Debit(1000.0);
+            checking.Debit(200);
+            Console.WriteLine("Checking balance after debit: " + checking.GetBalance()); // 380 (590 - 200 - 10)
         }
     }
 }

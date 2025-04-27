@@ -1,28 +1,32 @@
-﻿namespace Day6
+﻿using System;
+
+namespace Day6
 {
     internal class CheckingAccount : Account
     {
-        private double transactionFee;
+        private double feePerTransaction; 
 
         public CheckingAccount(double initialBalance, double fee) : base(initialBalance)
         {
-            transactionFee = fee;
+            this.feePerTransaction = fee;
         }
 
         public override void Credit(double amount)
         {
-            base.Credit(amount);
-            balance -= transactionFee;
+            balance += amount;
+            balance -= feePerTransaction; 
         }
 
-        public override bool Debit(double amount)
+        public override void Debit(double amount)
         {
-            bool success = base.Debit(amount);
-            if (success)
+            if (amount + feePerTransaction <= balance)
             {
-                balance -= transactionFee;
+                balance -= (amount + feePerTransaction);
             }
-            return success;
+            else
+            {
+                Console.WriteLine("Debit amount exceeded account balance.");
+            }
         }
     }
 }

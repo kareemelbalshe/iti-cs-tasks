@@ -11,10 +11,7 @@ namespace Day6
             if (initialBalance >= 0)
                 balance = initialBalance;
             else
-            {
                 balance = 0;
-                Console.WriteLine("Initial balance was invalid. Set to 0.");
-            }
         }
 
         public virtual void Credit(double amount)
@@ -22,23 +19,18 @@ namespace Day6
             balance += amount;
         }
 
-        public virtual bool Debit(double amount)
+        public virtual void Debit(double amount)
         {
-            if (amount > balance)
-            {
-                Console.WriteLine("Debit amount exceeded account balance.");
-                return false;
-            }
-            else
-            {
+            if (amount <= balance)
                 balance -= amount;
-                return true;
-            }
+            else
+                Console.WriteLine("Debit amount exceeded account balance.");
         }
 
         public double GetBalance()
         {
             return balance;
         }
+
     }
 }
