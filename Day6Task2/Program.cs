@@ -16,6 +16,7 @@ namespace Day6Task2
 
             RunAllDraw(shapes);
             CalculateAllAreas(shapes);
+
         }
 
         static void RunAllDraw(Shape[] shapes)
@@ -23,6 +24,9 @@ namespace Day6Task2
             foreach (var shape in shapes)
             {
                 shape.Draw();
+                Console.WriteLine($"The area of {shape.GetType().Name} is: {shape.CalcArea()}");
+                Console.WriteLine();
+
             }
         }
 
