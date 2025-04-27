@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
@@ -362,15 +358,15 @@ namespace ConsoleApp2
             int start = Math.Min(fn, sn);
             int end = Math.Max(fn, sn);
 
-            int[] evenNumbers = new int[end-start];
-            int[] oddNumbers = new int[end-start];
+            int[] evenNumbers = new int[end - start];
+            int[] oddNumbers = new int[end - start];
             int evenSum = 0, oddSum = 0;
 
             for (int i = start; i <= end; i++)
             {
                 if (i % 2 == 0)
                 {
-                    evenNumbers.SetValue(i, i+fn);
+                    evenNumbers.SetValue(i, i + fn);
                     evenSum += i;
                 }
                 else
@@ -507,7 +503,7 @@ namespace ConsoleApp2
             Console.WriteLine("\nProgram Ended. Goodbye!");
 
 
-           
+
         }
     }
 }

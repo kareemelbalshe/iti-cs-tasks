@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Day3
 {
@@ -90,7 +88,7 @@ namespace Day3
             return maxDistance;
         }
 
-        
+
 
         static void Main(string[] args)
         {
@@ -107,7 +105,7 @@ namespace Day3
             //Console.WriteLine($"Min value: {GetMin(arr)}");
             //Console.WriteLine($"Average: {GetAvg(arr):F2}");
 
-        int[] arr1 = {1,2, 3, 4 };
+            int[] arr1 = { 1, 2, 3, 4 };
             int[] arr2 = { 20, 30, 40, 50 };
             int[] result = ConcatArrays(arr1, arr2);
             //Console.WriteLine(string.Join(", ", result));

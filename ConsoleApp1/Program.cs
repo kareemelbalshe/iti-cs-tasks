@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -15,7 +11,7 @@ namespace ConsoleApp1
             Console.WriteLine("Hello World");
 
             Console.Write("Enter a character: ");
-            string input = Console.ReadLine(); 
+            string input = Console.ReadLine();
 
             char ch = input[0];
             Console.WriteLine("ASCII code of '{0}' is: {1}", ch, (int)ch);
