@@ -1,0 +1,7 @@
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\obj\Debug\Day7Task3.csproj.AssemblyReference.cache
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\obj\Debug\Day7Task3.csproj.CoreCompileInputs.cache
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\bin\Debug\Day7Task3.exe.config
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\bin\Debug\Day7Task3.exe
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\bin\Debug\Day7Task3.pdb
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\obj\Debug\Day7Task3.exe
+F:\iti Dotnet\OOPD01\ConsoleApp1\Day7Task3\obj\Debug\Day7Task3.pdb
