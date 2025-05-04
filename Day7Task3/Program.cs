@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Day7Task3
 {
@@ -28,6 +24,7 @@ namespace Day7Task3
                 new HREmployee(1, "kareem", 50000, hrClients),
                 new PREmployee(2, "ahmed", 40000, prClients)
             };
+            
 
             foreach (var employee in employees)
             {
@@ -38,6 +35,17 @@ namespace Day7Task3
             Employee mostClientsEmployee = GetEmployeeWithLongestClientsArray(employees);
             Console.WriteLine($"Employee with most clients: {mostClientsEmployee.Name}");
             Console.WriteLine();
+
+            if (employees[0] > employees[1])
+            {
+                Console.WriteLine("Employee 1 has more salary than Employee 2");
+            }
+            else
+            {
+                Console.WriteLine("Employee 1 has more salary than Employee 2");
+            }
+
+
         }
 
         static Employee GetEmployeeWithLongestClientsArray(Employee[] employees)
@@ -52,5 +60,7 @@ namespace Day7Task3
             }
             return max;
         }
+
+
     }
 }

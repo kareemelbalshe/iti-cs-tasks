@@ -18,7 +18,30 @@ namespace Day7Task1
             Console.WriteLine();
             Duration duration3 = new Duration(666);
             duration3.Print();
-            Console.ReadLine();
+            Console.WriteLine();
+
+            Duration duration4 = duration1 + duration3;
+            Console.WriteLine(duration4);
+
+            Duration duration5 = duration1 + 3600;
+            Console.WriteLine(duration5);
+
+            if (duration1 > duration2)
+            {
+                Console.WriteLine("duration1 is greater than duration2");
+            }
+            else
+            {
+                Console.WriteLine("duration1 is less than duration2");
+            }
+            if (duration1 >= duration2)
+            {
+                Console.WriteLine("duration1 is greater than or equal to duration2");
+            }
+            else
+            {
+                Console.WriteLine("duration1 is less than duration2");
+            }
         }
     }
 }

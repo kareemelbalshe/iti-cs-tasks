@@ -24,5 +24,22 @@ namespace Day7Task3
         }
 
         public abstract void ShowEmployeeDetails();
+        public static bool operator >(Employee e1, Employee e2)
+        {
+            return e1.Salary > e2.Salary;
+        }
+        public static bool operator <(Employee e1, Employee e2)
+        {
+            return !(e1 > e2);
+        }
+
+        public static bool operator >=(Employee e1, Employee e2)
+        {
+            return e1.Salary >= e2.Salary;
+        }
+        public static bool operator <=(Employee e1, Employee e2)
+        {
+            return !(e1 >= e2);
+        }
     }
 }

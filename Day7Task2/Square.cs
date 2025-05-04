@@ -12,10 +12,7 @@ namespace Day7Task2
         {
         }
 
-        public override float CalcArea()
-        {
-            return Dim1 * Dim1; 
-        }
+      
 
         public override void Draw()
         {
